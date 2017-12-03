@@ -528,16 +528,16 @@ function transicion(){
 
 		if(final_states.indexOf(state) != -1){
 			$('#accepted_text').show();
-			accept_text = "(Accepted)";
+			accept_text = "(Aceptado)";
 		}
 		else{
 			$('#rejected_text').show();
-			accept_text = "(Rejected)";
+			accept_text = "(Rechazado)";
 		}
 		//Write output
-		var output_text = "Input: " + input + " " + accept_text + "<br>";
+		var output_text = "Entrada: " + input + " " + accept_text + "<br>";
 		for(var j = 0; j < n_tapes; j++){
-			output_text += "Tape " + (j + 1) + ": " + tapes[j].get_string() + "<br>";
+			output_text += "Cinta " + (j + 1) + ": " + tapes[j].get_string() + "<br>";
 		}
 		$('#output_text').html(output_text);
 
@@ -547,5 +547,5 @@ function transicion(){
 		disableMachineButtons();
 		input_loaded = false;
 	}
-	$('#counter_text').text("Steps: "+step_counter);
+	$('#counter_text').text("Pasos: "+step_counter);
 }
