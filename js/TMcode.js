@@ -208,8 +208,8 @@ $('#loader').click(function() {
 					disableMachineButtons();
 	                $('#machine_title').html(machine_name);
 					$('#machine').slideDown('slow', function() {});
-					$('#counter_text').text('Steps: 0');
-					$('#state_text').text('State: None');
+					$('#counter_text').text('Pasos: 0');
+					$('#state_text').text('Estado: Ninguno');
 					$('#accepted_text').hide();
 					$('#rejected_text').hide();
 				});
