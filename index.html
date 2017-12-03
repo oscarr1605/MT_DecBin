@@ -29,66 +29,6 @@
         <link href="css/TM.css" type="text/css" rel="stylesheet">
     </head>
     <body class="dimmable">
-        <!-- BEGIN MACHINE DIV -->
-        <div class="ui segments" id="machine" style="display:none;">
-            <div class="ui center aligned grey segment">
-                <h2 class="ui header" id="machine_title"></h2>
-            </div>
-            <div class="ui segment" id="machine_segment">
-                <div class="ui center aligned stackable grid" id="machine_grid">
-                    <!-- state and steps -->
-                    <div class="five wide center aligned column">
-                        <h4 class="ui header" id="counter_text">Pasos: 0</h4>
-                    </div>
-                    <div class="six wide center aligned column" id="state_text_container">
-                        <h4 class="ui header" id="state_text">Estado: Ninguno</h4>
-                    </div>
-                    <div class="five wide center aligned column">
-                        <h4 class="ui green header accept" id="accepted_text" style="display:none;">
-                            Aceptado <a onclick="$('#output_modal').modal('show');" style="cursor:pointer"> (mostrar)</a>
-                        </h4>
-                        <h4 class="ui red header accept" id="rejected_text" style="display:none;">
-                            Rechazado <a onclick="$('#output_modal').modal('show');" style="cursor:pointer"> (mostrar)</a>
-                        </h4>
-                    </div>
-                </div>
-                <div id="container"></div>
-                <div id="binaryDecimal" class="ui segment five wide center aligned column" style="display:none">
-                    <h3 id="binaryResult">Resultado: </h3>
-                </div>
-            </div>
-            <div class="ui segment">
-                <div class="ui centered stackable grid">
-                    <!-- controls -->
-                    <div class="six wide center aligned column">
-                        <div class="ui action left icon compact input">
-                            <input type="text" id="input" placeholder="Decimal">
-                            <i class="write icon" id="accept_icon"></i>
-                            <button class="ui big compact button" id="load_input">Cargar</button>
-                        </div>
-                    </div>
-                    <div class="four wide center aligned column" data-content="Cargar un decimal primero">
-                        <div class="ui big icon buttons">
-                            <button class="ui button" id="play"><i class="play icon"></i></button>
-                            <button class="ui button" id="pause"><i class="pause icon"></i></button>
-                            <button class="ui button disabled" id="stop"><i class="stop icon"></i></button>
-                            <button class="ui button" id="step"><i class="step forward icon"></i></button>
-                        </div>
-                    </div>
-                    <div class="six wide center aligned column" id="speed_column">
-                        <div class="ui grid">
-                            <div class="four wide column">
-                                <h3 class="ui header">Velocidad:</h3>
-                            </div>
-                            <div class="eleven wide center aligned column">
-                                <div id="speed_bar"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END MACHINE DIV -->
         <!-- BEGIN ALERTS DIV -->
         <div class="ui alert message" id="alert_container" style="display:none">
             <i class="close icon"></i>
@@ -1016,6 +956,66 @@
             </div>
             <!-- END CODE DIV -->
         </div>
+        <!-- BEGIN MACHINE DIV -->
+        <div class="ui segments" id="machine" style="display:none;">
+            <div class="ui center aligned grey segment">
+                <h2 class="ui header" id="machine_title"></h2>
+            </div>
+            <div class="ui segment" id="machine_segment">
+                <div class="ui center aligned stackable grid" id="machine_grid">
+                    <!-- state and steps -->
+                    <div class="five wide center aligned column">
+                        <h4 class="ui header" id="counter_text">Pasos: 0</h4>
+                    </div>
+                    <div class="six wide center aligned column" id="state_text_container">
+                        <h4 class="ui header" id="state_text">Estado: Ninguno</h4>
+                    </div>
+                    <div class="five wide center aligned column">
+                        <h4 class="ui green header accept" id="accepted_text" style="display:none;">
+                            Aceptado <a onclick="$('#output_modal').modal('show');" style="cursor:pointer"> (mostrar)</a>
+                        </h4>
+                        <h4 class="ui red header accept" id="rejected_text" style="display:none;">
+                            Rechazado <a onclick="$('#output_modal').modal('show');" style="cursor:pointer"> (mostrar)</a>
+                        </h4>
+                    </div>
+                </div>
+                <div id="container"></div>
+                <div id="binaryDecimal" class="ui segment five wide center aligned column" style="display:none">
+                    <h3 id="binaryResult">Resultado: </h3>
+                </div>
+            </div>
+            <div class="ui segment">
+                <div class="ui centered stackable grid">
+                    <!-- controls -->
+                    <div class="six wide center aligned column">
+                        <div class="ui action left icon compact input">
+                            <input type="text" id="input" placeholder="Decimal">
+                            <i class="write icon" id="accept_icon"></i>
+                            <button class="ui big compact button" id="load_input">Cargar</button>
+                        </div>
+                    </div>
+                    <div class="four wide center aligned column" data-content="Cargar un decimal primero">
+                        <div class="ui big icon buttons">
+                            <button class="ui button" id="play"><i class="play icon"></i></button>
+                            <button class="ui button" id="pause"><i class="pause icon"></i></button>
+                            <button class="ui button disabled" id="stop"><i class="stop icon"></i></button>
+                            <button class="ui button" id="step"><i class="step forward icon"></i></button>
+                        </div>
+                    </div>
+                    <div class="six wide center aligned column" id="speed_column">
+                        <div class="ui grid">
+                            <div class="four wide column">
+                                <h3 class="ui header">Velocidad:</h3>
+                            </div>
+                            <div class="eleven wide center aligned column">
+                                <div id="speed_bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MACHINE DIV -->
         <div class="ui small basic modal" id="output_modal">
             <div class="ui icon header">
                 <i class="file text outline icon"></i>
