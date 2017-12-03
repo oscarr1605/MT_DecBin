@@ -117,7 +117,7 @@ window.onload = function(){
 			layer.clear();
 			loadTapes();
 			step_counter = 0;
-			$('#state_text').text("Estado " + initial_state);
+			$('#state_text').text("Estado: " + initial_state);
 			$('#counter_text').text("Pasos: 0");
 			input = $("#input").val();
 			tapes[0].set_input(input);
@@ -159,7 +159,7 @@ window.onload = function(){
 		if(input_loaded){
 			disableMachineButtons();
 			input_loaded = false;
-			$('#state_text').text('State: None');
+			$('#state_text').text('Estado: Ninguno');
 			pause = true;
 			$('#load_input').removeClass('disabled');
 			$('#input').removeClass('disabled');
