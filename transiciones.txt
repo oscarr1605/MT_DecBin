@@ -1,216 +1,216 @@
 name: Conversor Decimal a Binario
-init: qinit
-accept: qfin
+init: q0
+accept: q6
 
-qinit,0
-qinit,0,r
+q0,0
+q0,0,r
 
-qinit,1
-qinit,1,r
+q0,1
+q0,1,r
 
-qinit,2
-qinit,2,r
+q0,2
+q0,2,r
 
-qinit,3
-qinit,3,r
+q0,3
+q0,3,r
 
-qinit,4
-qinit,4,r
+q0,4
+q0,4,r
 
-qinit,5
-qinit,5,r
+q0,5
+q0,5,r
 
-qinit,6
-qinit,6,r
+q0,6
+q0,6,r
 
-qinit,7
-qinit,7,r
+q0,7
+q0,7,r
 
-qinit,8
-qinit,8,r
+q0,8
+q0,8,r
 
-qinit,9
-qinit,9,r
+q0,9
+q0,9,r
 
-qinit,_
-halve,0,l
+q0,_
+q1,0,l
 
-// Halve and go to addHalf to add the goBack
-halve,0
-halve,0,l
+// Halve and go to q2 to add the q5
+q1,0
+q1,0,l
 
-halve,1
-addHalf,0,r
+q1,1
+q2,0,r
 
-halve,2
-halve,1,l
+q1,2
+q1,1,l
 
-halve,3
-addHalf,1,r
+q1,3
+q2,1,r
 
-halve,4
-halve,2,l
+q1,4
+q1,2,l
 
-halve,5
-addHalf,2,r
+q1,5
+q2,2,r
 
-halve,6
-halve,3,l
+q1,6
+q1,3,l
 
-halve,7
-addHalf,3,r
+q1,7
+q2,3,r
 
-halve,8
-halve,4,l
+q1,8
+q1,4,l
 
-halve,9
-addHalf,4,r
+q1,9
+q2,4,r
 
 // Add 0.5 to the right
-addHalf,0
-jump,5,l
+q2,0
+q3,5,l
 
-addHalf,1
-jump,6,l
+q2,1
+q3,6,l
 
-addHalf,2
-jump,7,l
+q2,2
+q3,7,l
 
-addHalf,3
-jump,8,l
+q2,3
+q3,8,l
 
-addHalf,4
-jump,9,l
+q2,4
+q3,9,l
 
 // Jump back
-jump,0
-halve,0,l
+q3,0
+q1,0,l
 
-jump,1
-halve,1,l
+q3,1
+q1,1,l
 
-jump,2
-halve,2,l
+q3,2
+q1,2,l
 
-jump,3
-halve,3,l
+q3,3
+q1,3,l
 
-jump,4
-halve,4,l
+q3,4
+q1,4,l
 
 // If we halved successfully, we first remove the zero if there is one and then we go back
-halve,_
-removezero,_,r
+q1,_
+q4,_,r
 
-removezero,0
-removezero,_,r
+q4,0
+q4,_,r
 
-removezero,1
-goBack,1,r
+q4,1
+q5,1,r
 
-removezero,2
-goBack,2,r
+q4,2
+q5,2,r
 
-removezero,3
-goBack,3,r
+q4,3
+q5,3,r
 
-removezero,4
-goBack,4,r
+q4,4
+q5,4,r
 
-removezero,5
-goBack,5,r
+q4,5
+q5,5,r
 
-removezero,6
-goBack,6,r
+q4,6
+q5,6,r
 
-removezero,7
-goBack,7,r
+q4,7
+q5,7,r
 
-removezero,8
-goBack,8,r
+q4,8
+q5,8,r
 
-removezero,9
-goBack,9,r
+q4,9
+q5,9,r
 
 // qfinished
-removezero,_
-qfin,_,r
+q4,_
+q6,_,r
 
-// normal goBack
-goBack,0
-goBack,0,r
+// normal q5
+q5,0
+q5,0,r
 
-goBack,1
-goBack,1,r
+q5,1
+q5,1,r
 
-goBack,2
-goBack,2,r
+q5,2
+q5,2,r
 
-goBack,3
-goBack,3,r
+q5,3
+q5,3,r
 
-goBack,4
-goBack,4,r
+q5,4
+q5,4,r
 
-goBack,5
-goBack,5,r
+q5,5
+q5,5,r
 
-goBack,6
-goBack,6,r
+q5,6
+q5,6,r
 
-goBack,7
-goBack,7,r
+q5,7
+q5,7,r
 
-goBack,8
-goBack,8,r
+q5,8
+q5,8,r
 
-goBack,9
-goBack,9,r
+q5,9
+q5,9,r
 
-// rest
-goBack,_
-rest,_,l
+// q7
+q5,_
+q7,_,l
 
-rest,0
-rest0,_,r
+q7,0
+q8,_,r
 
-rest0,_
-setrest0,_,r
+q8,_
+q10,_,r
 
-rest,5
-rest1,_,r
+q7,5
+q9,_,r
 
-rest1,_
-setrest1,_,r
+q9,_
+q11,_,r
 
-setrest0,0
-setrest0,0,r
+q10,0
+q10,0,r
 
-setrest0,1
-setrest0,1,r
+q10,1
+q10,1,r
 
-setrest1,0
-setrest1,0,r
+q11,0
+q11,0,r
 
-setrest1,1
-setrest1,1,r
+q11,1
+q11,1,r
 
-setrest0,_
-continue,0,l
+q10,_
+q12,0,l
 
-setrest1,_
-continue,1,l
+q11,_
+q12,1,l
 
-// continue
-continue,0
-continue,0,l
+// q12
+q12,0
+q12,0,l
 
-continue,1
-continue,1,l
+q12,1
+q12,1,l
 
-continue,_
-continue2,_,l
+q12,_
+q13,_,l
 
 // delimiter
-continue2,_
-halve,0,l
+q13,_
+q1,0,l
