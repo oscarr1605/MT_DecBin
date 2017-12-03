@@ -1,0 +1,47 @@
+#editor_container{
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+@media (max-width: 1080px){
+	#editor_container{
+		width: 100%;
+	}
+}
+
+#machine_grid > div.column{
+	height:10px!important;
+}
+
+#machine_grid{
+	width: inherit;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#speed_bar{
+	background: #2980b9;
+}
+#speed_column{
+	margin-top: 10px;
+}
+
+#menu_column{
+	margin-top: 10px;
+}
+
+#container{
+	margin-top: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+}
+
+#machine_segment{
+	padding: 10px 0px 0px 0px;
+}
+
+.ui.header.accept{
+	margin-top: 0px;
+}
