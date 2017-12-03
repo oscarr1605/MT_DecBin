@@ -117,8 +117,8 @@ window.onload = function(){
 			layer.clear();
 			loadTapes();
 			step_counter = 0;
-			$('#state_text').text("State: " + initial_state);
-			$('#counter_text').text("Steps: 0");
+			$('#state_text').text("Estado " + initial_state);
+			$('#counter_text').text("Pasos: 0");
 			input = $("#input").val();
 			tapes[0].set_input(input);
 			enableMachineButtons();
