@@ -479,6 +479,7 @@ function transicion(){
 		current_transition += tapes[i].get_current_symbol()+",";
 	}
 	current_transition += tapes[n_tapes - 1].get_current_symbol();
+	console.log(transition);
 	console.log(transitions[current_transition]);
 	console.log('');
 
