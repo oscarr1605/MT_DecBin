@@ -487,7 +487,7 @@ function transicion(){
 	if(transitions[current_transition]){
 		var aux = transitions[current_transition].split(',');
 		state = aux[0];
-		$('#state_text').text("State: "+state);
+		$('#state_text').text("Estado: "+state);
 
 		for(var i = 0; i < n_tapes; i++){
 			tapes[i].set_middle_symbol(aux[i+1]);
@@ -512,7 +512,7 @@ function transicion(){
 
 	else{
 		ready_tapes = 2 * n_tapes;
-		$('#state_text').text("State: "+state);
+		$('#state_text').text("Estado: "+state);
 		var accept_text;
 
 		binDec = tapes[0]['char_array'];
