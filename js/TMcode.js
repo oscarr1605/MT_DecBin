@@ -100,7 +100,7 @@ window.onload = function() {
         if ((/[\s]/).test($("#input").val())) {
 
             $('#log_container').slideUp('slow', function() {
-                $("#log").html("<strong>Input error</strong>: White space is not a valid input character");
+                $("#log").html("<strong>Input error</strong>: El espacio en blanco no es un caracter de entrada valido");
                 $("#log_container").slideDown('slow', function() {});
             });
         } else {
