@@ -454,6 +454,7 @@ function transicion() {
     }
     current_transition += tapes[n_tapes - 1].get_current_symbol();
     var trans_id = current_transition.concat('', transitions[current_transition]);
+    var trans = current_transition+" -> "+transitions[current_transition];
     var tid = trans_id.replace(/,/g, '');
     $('#' + tid).addClass('transition-filled');
 
@@ -462,7 +463,7 @@ function transicion() {
 
         var aux = transitions[current_transition].split(',');
         state = aux[0];
-        $('#state_text').text("Estado: " + state);
+        $('#state_text').text("Estado: " + state + " | Transición: " + trans);
 
         for (var i = 0; i < n_tapes; i++) {
             tapes[i].set_middle_symbol(aux[i + 1]);
