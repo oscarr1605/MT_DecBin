@@ -469,7 +469,8 @@ function loadMachine(){
 
 //Apply 1 transition
 function transicion(){
-	$('#'+state).removeClass('state-filled');
+	$('ellipse').removeClass('state-filled');
+	$('div').removeClass('transition-filled');
 	$('#'+state).addClass('state-normal');
 	ready_tapes = 0;
 	var current_transition = "";
@@ -479,13 +480,15 @@ function transicion(){
 		current_transition += tapes[i].get_current_symbol()+",";
 	}
 	current_transition += tapes[n_tapes - 1].get_current_symbol();
-	console.log(current_transition);
-	console.log(transitions[current_transition]);
-	console.log('');
-
+	var trans_id = current_transition.concat('',transitions[current_transition]);
+	var tid = trans_id.replace(/,/g,'');
+	$('#'+tid).addClass('transition-filled');
 	//If transition exists, apply transition.
-
+	console.log(tid);
 	if(transitions[current_transition]){
+		// console.log(transitions[0]);
+		console.log(tid+1);
+
 		var aux = transitions[current_transition].split(',');
 		state = aux[0];
 		$('#state_text').text("Estado: "+state);
@@ -507,11 +510,12 @@ function transicion(){
 		}
 		$('#'+state).addClass('state-filled');
 		step_counter++;
-	}
 
 	//Otherwise verify if the input is accepted.
 
+}
 	else{
+		// $('#t'+transitions[current_transition]+1).removeClass('transition-filled');
 		ready_tapes = 2 * n_tapes;
 		$('#state_text').text("Estado: "+state);
 		var accept_text;
@@ -548,5 +552,6 @@ function transicion(){
 		disableMachineButtons();
 		input_loaded = false;
 	}
+
 	$('#counter_text').text("Pasos: "+step_counter);
 }
