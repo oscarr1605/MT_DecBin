@@ -113,7 +113,7 @@ window.onload = function() {
             loadTapes();
             step_counter = 0;
             $('#state_text').text("Estado: " + initial_state);
-            $('#counter_text').text("Pasos: 0");
+            $('#counter_text').text("Recorrido: 0");
             input = $("#input").val();
             tapes[0].set_input(input);
             enableMachineButtons();
@@ -203,7 +203,7 @@ $('#loader').click(function() {
                 disableMachineButtons();
                 $('#machine_title').html(machine_name);
                 $('#machine').slideDown('slow', function() {});
-                $('#counter_text').text('Pasos: 0');
+                $('#counter_text').text('Recorrido: 0');
                 $('#state_text').text('Estado: Ninguno');
                 $('#accepted_text').hide();
                 $('#rejected_text').hide();
@@ -524,5 +524,5 @@ function transicion() {
         input_loaded = false;
     }
 
-    $('#counter_text').text("Pasos: " + step_counter);
+    $('#counter_text').text("Recorrido: " + step_counter);
 }

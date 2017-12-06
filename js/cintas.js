@@ -4,7 +4,7 @@ function letter_box(sq_size, pos_x, pos_y) {
         y: pos_y,
         width: sq_size,
         height: sq_size,
-        fill: "#428bca",
+        fill: "#00bcd4",
         stroke: 'white'
     });
 

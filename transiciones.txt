@@ -35,7 +35,6 @@ q0,9,r
 q0,_
 q1,0,l
 
-// Halve and go to q2 to add the q5
 q1,0
 q1,0,l
 
@@ -66,7 +65,6 @@ q1,4,l
 q1,9
 q2,4,r
 
-// Add 0.5 to the right
 q2,0
 q3,5,l
 
@@ -82,7 +80,6 @@ q3,8,l
 q2,4
 q3,9,l
 
-// Jump back
 q3,0
 q1,0,l
 
@@ -98,7 +95,6 @@ q1,3,l
 q3,4
 q1,4,l
 
-// If we halved successfully, we first remove the zero if there is one and then we go back
 q1,_
 q4,_,r
 
@@ -132,11 +128,9 @@ q5,8,r
 q4,9
 q5,9,r
 
-// qfinished
 q4,_
 q6,_,r
 
-// normal q5
 q5,0
 q5,0,r
 
@@ -167,7 +161,6 @@ q5,8,r
 q5,9
 q5,9,r
 
-// q7
 q5,_
 q7,_,l
 
@@ -201,7 +194,6 @@ q12,0,l
 q11,_
 q12,1,l
 
-// q12
 q12,0
 q12,0,l
 
@@ -211,6 +203,5 @@ q12,1,l
 q12,_
 q13,_,l
 
-// delimiter
 q13,_
 q1,0,l
