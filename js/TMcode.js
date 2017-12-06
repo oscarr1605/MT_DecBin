@@ -57,7 +57,7 @@ window.onload = function() {
     //Just a fixed height
     myCodeMirror.setSize(null, 380);
 
-    //Just to set the focus?
+    //Just to set the focus
     $('#code_container').click();
 
     //Define main kineticJS stage
@@ -185,7 +185,7 @@ window.onload = function() {
     //*********END Add eventListeners to actions_
 };
 
-//************************** When "load machine" button is clicked.
+//************************** When "Cargar transiciones" button is clicked.
 $('#loader').click(function() {
     if (loadMachine()) {
         $('#log_container').slideUp('slow', function() {
