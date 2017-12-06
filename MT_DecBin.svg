@@ -664,20 +664,20 @@
             <switch>
                 <foreignObject style="overflow:visible;" pointer-events="all" width="42" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 43px; white-space: nowrap; word-wrap: normal; text-align: center;">
-                        <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">0 ; 0 , R</div>
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">0 ; 0 , L</div>
                     </div>
                 </foreignObject>
-                <text x="21" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">0 ; 0 , R</text>
+                <text x="21" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">0 ; 0 , L</text>
             </switch>
         </g>
         <g transform="translate(169.5,4.5)scale(0.7)">
             <switch>
                 <foreignObject style="overflow:visible;" pointer-events="all" width="42" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 43px; white-space: nowrap; word-wrap: normal; text-align: center;">
-                        <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">1 ; 1 , R</div>
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">1 ; 1 , L</div>
                     </div>
                 </foreignObject>
-                <text x="21" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">1 ; 1 , R</text>
+                <text x="21" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">1 ; 1 , L</text>
             </switch>
         </g>
         <g transform="translate(269.5,86.5)scale(0.7)rotate(10,22,6)">
